@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tic Tac Toe</title>
+<script>
+var turn = 1;
+var count = 1;
+var win = 0;
+var WinX = 0;
+var WinO = 0;
+var check = 1
+var snd = new Audio("Glass.wav"); 
+var snd2 = new Audio("applause.wav");
+var snd3 = new Audio("apl.wav");
+
+
+var person = prompt("Name of Player X?");
+var person2 = prompt("Name of Player O?");
+
+function checkwinner(cell) {
+
+
+ 
+ if (turn==1 && cell.innerHTML!=="O") {
+     cell.innerHTML="X"
+	 turn = 2; 
+	 snd.play();
+ } else if (turn==2 && cell.innerHTML!=="X") {
+     cell.innerHTML="O"
+	 turn = 1;
+	  snd.play();
+     }
+
+
+	 square1 = btn1.innerHTML;
+     square2 = btn2.innerHTML;
+     square3 = btn3.innerHTML;
+     square4 = btn4.innerHTML;
+     square5 = btn5.innerHTML;
+     square6 = btn6.innerHTML;
+     square7 = btn7.innerHTML;
+     square8 = btn8.innerHTML;
+     square9 = btn9.innerHTML;
+	 
+count = count + 1
+
+	  
+      if(square1==square2 && square2 == square3 && square1 !== "" && square2 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square4==square5 && square5 == square6 && square4 !== "" && square5 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square7==square8 && square8 == square9 && square7 !== "" && square8 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square1==square4 && square4 == square7 && square1 !== "" && square4 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square2==square5 && square5 == square8 && square5 !== "" && square2 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square3==square6 && square6 == square9 && square6 !== "" && square3 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square1==square5 && square5 == square9 && square5 !== "" && square1 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+	  
+      }if(square3==square5 && square5 == square7 && square5 !== "" && square3 == "X"){
+      alert(person + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinX = WinX + 1
+	  snd2.play();
+	  setup();
+      }
+
+      if(square1==square2 && square2 == square3 && square1 !== "" && square2 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square4==square5 && square5 == square6 && square4 !== "" && square5 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square7==square8 && square8 == square9 && square7 !== "" && square8 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square1==square4 && square4 == square7 && square1 !== "" && square4 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square2==square5 && square5 == square8 && square5 !== "" && square2 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square3==square6 && square6 == square9 && square6 !== "" && square3 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  if(square1==square5 && square5 == square9 && square5 !== "" && square1 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+	  
+      }if(square3==square5 && square5 == square7 && square5 !== "" && square3 == "O"){
+      alert(person2 + " is the Winner");
+	  win = 1
+	  count = 1
+	  turn = 1
+	  WinO = WinO + 1
+	  snd2.play();
+	  setup();
+      }
+	  document.getElementById("txtX").value=WinX;
+	  document.getElementById("txtO").value=WinO;
+	  
+	  if (count >= 9 && win !== 1 && btn1.innerHTML!=="" && btn2.innerHTML!=="" && btn3.innerHTML!=="" && btn4.innerHTML!=="" && btn5.innerHTML!=="" && btn6.innerHTML!=="" && btn7.innerHTML!=="" && btn8.innerHTML!=="" && btn9.innerHTML!=="") {
+		alert("The Game is a Tie!");
+		setup();
+		count = 1
+	  }
+	  if (WinX == 5 || WinO == 5) {
+		 snd3.play();
+		 document.getElementById("imgyay").style.visibility=visible
+	  }
+	  
+}
+
+function setup() {
+	win = 0
+	count = 1
+btn1.innerHTML = ""
+btn2.innerHTML = ""
+btn3.innerHTML = ""
+btn4.innerHTML = ""
+btn5.innerHTML = ""
+btn6.innerHTML = ""
+btn7.innerHTML = ""
+btn8.innerHTML = ""
+btn9.innerHTML = ""
+
+
+}
+
+
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(wall.jpg);
+}
+-->
+</style></head>
+
+<body>
+<img src="image.png" name="imgyay" width="479" height="336" id="imgyay" style="position:absolute; left: 265px; top: 95px; width: 664px; height: 447px; z-index: 3; visibility: hidden;"/>
+<p id="btn1" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 508px; top: 82px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn2" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 608px; top: 82px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn3" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 708px; top: 82px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn4" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 508px; top: 182px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn5" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 608px; top: 182px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn6" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 708px; top: 182px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn7" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 508px; top: 282px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn8" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 608px; top: 282px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btn9" style="position:absolute; background-color:red; align='center'; width:80px; height:80px; left: 708px; top: 282px; font-size:4em;" onclick="javascript:checkwinner(this)"; ></p>
+
+<p id="btnreset" onclick="javascript:setup();" style="background-color:#3F0; color:#F00; position:absolute; align='center'; width:59px; height:31px; left: 617px; top: 487px; font-size:24px;" >Reset</p>
+
+<p id="tictactoe" style="font-size:36px; color:#F00; text-align:center">Tic Tac Toe</p>
+ <p>&nbsp;</p>
+<p>
+   <label>
+     <input type="text" name="txtX" id="txtX" style="position:absolute; left: 240px; top: 85px; width: 151px; height: 37px;";/>
+   </label>
+   
+   
+   <p id="lbltxtX" style="position:absolute; border:hidden align='center'; width:125px; height:38px; left: 107px; top: 75px; font-size:15px; color:#F00;" >Number of "X" Wins</p>
+
+ </p>
+<p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>
+   <input type="text" name="txtO" id="txtO" style="position:absolute; border:hiddenleft: 539px; top: 140px; width: 151px; height: 37px; left: 240px;";/>
+   
+   <p id="lbltxtO" style="position:absolute; align='center'; width:125px; height:38px; left: 107px; top: 130px; font-size:15px; color:#F00" >Number of "O" Wins</p>
+   
+ </p>
+<p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p>&nbsp;</p>
+ <p>&nbsp;</p>
+</body>
+</html>
